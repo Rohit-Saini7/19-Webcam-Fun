@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  /* font-size: 10px; */
+  background: url(../assets/background.jpg);
+  background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.main-body {
+  max-height: 90vh;
+}
+/* !------------------------- */
+
+.rounded {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 80px;
+}
+.rounded:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 80px;
+  box-sizing: border-box;
+  border: 8px solid white;
+  transition: border-width 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.rounded:hover:after {
+  border-width: 40px;
+  transition: border-width 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.rounded:hover svg {
+  fill: #e53935;
+}
+.rounded svg {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  fill: white;
+  transform: translate3d(-50%, -50%, 0);
+  transition: fill 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.rounded {
+  position: absolute;
+  left: 25vw;
+  bottom: 7%;
+  transform: translate3d(-50%, -50%, 0);
+}
+/* !------------------------- */
+
+.photobooth {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 80vw;
+  margin: 2rem auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo {
+  float: left;
+  height: 70vh;
+  padding: 20px;
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #000;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.footer > a {
+  color: gray;
+  margin: 0 1rem;
+}

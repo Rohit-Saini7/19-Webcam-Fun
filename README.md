@@ -4,7 +4,7 @@ Date: July 21, 2022
 
 # Nineteenth challange of [JavaScript30](https://javascript30.com/)
 
-. To experience on your own visit [here](https://rohit-saini7.github.io/19-Webcam-Fun/).
+This challange shows how to use media devices like webcam to have some fun. To experience on your own visit [here](https://rohit-saini7.github.io/19-Webcam-Fun/).
 
 ## What is JavaScript 30
 
@@ -18,4 +18,4 @@ Learn more about the course in [here](https://javascript30.com/).
 
 ## Background
 
-Image by [engin akyurt](https://unsplash.com/@enginakyurt) on [Unsplash](https://unsplash.com/s/photos/yellow-abstract)
+Image by [Igor Karimov 🇺🇦](https://unsplash.com/@ingvar_erik) on [Unsplash](https://unsplash.com/s/photos/abstract-background)
